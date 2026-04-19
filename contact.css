@@ -504,35 +504,165 @@ textarea {
 }
 
 /* ========================= */
-/* Tablet Devices */
+/* TABLET RESPONSIVENESS */
 /* ========================= */
+@media (max-width: 1024px) {
 
-@media (max-width: 768px) {
+  header {
+    padding: 16px 30px;
+  }
+
+  nav ul {
+    gap: 25px;
+  }
+
+  .contact-container {
+    width: 100%;
+    height: auto;
+    margin: 40px auto;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-image,
+  .contact-image-layout,
+  .contact-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-info {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
 
   .container {
     width: 100%;
-    padding: 0 20px;
+    height: auto;
+    margin: 40px auto;
   }
 
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
+  .container-content {
+    width: 100%;
+    padding: 60px 20px;
+  }
+
+  #subscribe-form {
+    width: 100%;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
   }
 
 }
 
 
 /* ========================= */
-/* Mobile Devices */
+/* MOBILE RESPONSIVENESS */
 /* ========================= */
+@media (max-width: 768px) {
 
-@media (max-width: 480px) {
+  /* Navbar */
+  header {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+  }
 
-  .container {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 0;
+  }
+
+  .social-icons {
+    margin-right: 0;
+  }
+
+
+  /* Contact Section */
+  .contact-container {
+    margin: 30px 15px;
+  }
+
+  .row {
     flex-direction: column;
   }
 
-  .cards {
-    grid-template-columns: 1fr;
+  .submit-btn {
+    width: 100%;
+  }
+
+
+  /* Subscribe Section */
+  .subscribe-text {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #subscribe-form {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+
+  .subscribe-btn {
+    width: 100%;
+  }
+
+
+  /* Decorative Images Hide on Mobile */
+  .container-left-image,
+  .container-topright-image,
+  .container-bottomright-image {
+    display: none;
+  }
+
+
+  /* Cards */
+  .card-container {
+    gap: 25px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+
+  /* Footer */
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-bottom p {
+    margin-left: 0;
   }
 
 }
+
