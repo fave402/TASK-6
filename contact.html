@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Contact Page</title>
+  </head>
+  <body>
+    <header>
+      
+      <div class="logo">
+        <img src="Images/Foodieland..png" alt="Foodieland Logo" />
+      </div>
+
+      
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Recipes</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+
+      
+      <div class="social-icons">
+        <a href="https://facebook.com">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a href="https://twitter.com">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+
+        <a href="https://instagram.com">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+      
+    </header>
+
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+
+      <div class="contact-content">
+        
+        <div class="contact-image">
+          <div class="contact-image-layout">
+            <img src="Images/Layer 1 1.png" alt="Contact Image" />
+          </div>
+        </div>
+
+        
+        <div class="contact-info">
+          <form id="contact-details">
+          
+            <div class="row">
+              <div class="group">
+                <label for="name">NAME</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <div class="group">
+                <label for="email">EMAIL ADDRESS</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+                />
+              </div>
+            </div>
+
+            
+            <div class="row">
+              <div class="group">
+                <label for="subject">SUBJECT</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Enter subject..."
+                  required
+                />
+              </div>
+
+              <div class="group">
+                <label for="enquiry-type">ENQUIRY TYPE</label>
+                <select id="enquiry-type" name="enquiry-type" required>
+                  <option value="">Select an option</option>
+                  <option value="general" selected>Advertising</option>
+                  <option value="support">Support</option>
+                  <option value="feedback">Feedback</option>
+                </select>
+              </div>
+            </div>
+
+          
+            <div class="group full-width">
+              <label for="message">MESSAGE</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Enter your message..."
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            
+            <button
+              type="submit"
+              onclick="alert('Successfully submitted!')"
+              class="submit-btn"
+            >
+              <span class="text">Submit</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="container">
+      <div class="container-content">
+        <h2>Deliciousness to Your Inbox</h2>
+
+        <p class="subscribe-text">
+          Subscribe to our website and get the latest recipes, cooking tips, recent<br> and
+          exclusive offers delivered straight to your inbox.
+        </p>
+
+        <form id="subscribe-form">
+          <input
+            type="email"
+            id="subscribe-email"
+            name="subscribe-email"
+            placeholder="Your email address..."
+            required
+          />
+
+          <button
+            type="submit"
+            class="subscribe-btn"
+            onclick="alert('Successfully subscribed!')"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+      <!-- Decorative Images -->
+
+      <div class="container-left-image">
+        <img
+          src="Images/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543 1.png"
+          alt="Salad Image"
+        />
+      </div>
+
+      <div class="container-topright-image">
+        <img src="Images/rucola-png.png" alt="Rucola Image" />
+      </div>
+
+      
+      <div class="container-bottomright-image">
+        <img src="Images/Photo-plate (1).png" alt="Plate Image" />
+      </div>
+    </div>
+
+   
+    <section class="recipe-container">
+      <h2>Check out the delicious recipes</h2>
+
+      <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="Images/fruit salad.png" alt="Card Image" />
+            <span class="love-emoji"
+              ><img src="Images/Group 852.png" alt="Love Emoji"
+            /></span>
+          </div>
+
+          <h3 class="card-title">
+            Mixed Tropical Fruit Salad with Superfood Boosts
+          </h3>
+          <div class="items">
+            <span class="timer"
+              ><img src="Images/Timer.png" alt="timer" /></span
+            >
+              <span class="timer-text">30 minutes</span>
+
+            <span class="item"
+              ><img src="Images/ForkKnife.png" alt="Healthy" /></span
+            >
+            <span class="item-text">Healthy</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="Images/wagyu beef.png" alt="Card Image" />
+            <span class="love-emoji"
+              ><img src="Images/Group 852 (1).png" alt="Love Emoji"
+            /></span>
+          </div>
+
+          <h3 class="card-title">Big and Juicy Wagyu Beef Cheeseburger</h3>
+          
+          <div class="items">
+            <span class="timer"
+              ><img src="Images/Timer.png" alt="timer" /></span
+            >
+            <span class="timer-text">30 minutes</span>
+
+            <span class="item"
+              ><img src="Images/ForkKnife.png" alt="Healthy" /></span
+            >
+            <span class="item-text">Western</span>
+          </div>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="Images/japa rice.png" alt="Card Image" />
+            <span class="love-emoji"
+              ><img src="Images/Group 852.png" alt="Love Emoji"
+            /></span>
+          </div>
+
+          <h3 class="card-title">Healthy Japanese Fried Rice with Asparagus</h3>
+          
+          <div class="items">
+            <span class="timer"
+              ><img src="Images/Timer.png" alt="timer" /></span
+            >
+            <span class="timer-text">30 minutes</span>
+
+            <span class="item"
+              ><img src="Images/ForkKnife.png" alt="Healthy" /></span
+            >
+            <span class="item-text">Healthy</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="Images/taco meat.png" alt="Card Image" />
+            <span class="love-emoji"
+              ><img src="Images/Group 852 (1).png" alt="Love Emoji"
+            /></span>
+          </div>
+
+          <h3 class="card-title">Cauliflower Walnut Vegetarian Taco Meat</h3>
+          
+          <div class="items">
+            <span class="timer"
+              ><img src="Images/Timer.png" alt="timer" /></span
+            >
+            <span class="timer-text">30 minutes</span>
+
+            <span class="item"
+              ><img src="Images/ForkKnife.png" alt="Healthy" /></span
+            >
+            <span class="item-text">Eastern</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+
+      <div class="footer-top">
+
+        <!-- Footer Logo -->
+        <div class="footer-logo">
+          <img src="Images/Foodieland..png" alt="Foodieland Logo" />
+          <span class="footer-logo-text">Foodieland is your best choice for healthy and delicious recipes!</span>
+        </div>
+
+        <!-- Footer Links -->
+        <ul class="footer-links">
+          <li><a href="#">Recipes</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Footer Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Footer Copyright -->
+      <div class="footer-bottom"> 
+        <p>
+          &copy; 2020 Flowbase. Powered by <span class="colored">Webflow</span>
+        </p>
+
+        <!-- Footer Social Icons -->
+        <div class="footer-social-icons">
+          <a href="https://facebook.com">
+           <i class="fa-brands fa-facebook"></i>
+          </a>
+
+          <a href="https://twitter.com">
+           <i class="fa-brands fa-twitter"></i>
+          </a>
+
+          <a href="https://instagram.com">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    
+    </footer>
+  </body>
+</html>
